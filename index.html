@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My JavaScript App</title>
+  <script src="assets/js/fontawesome-all.min.js"></script>
+  <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="container-fluid bg-dark">
+  
+  <div class="container my-3">
+      <div class="row">
+          <div class="col-md-8 mx-auto">
+              <div class="jumbotron bg-dark text-light">
+                  <h1 class="display-4 text-center">Choose Your Weapon!</h1>
+                  <h3 class="display-3 text-center"><i class="far fa-hand-rock mr-5 text-danger"></i><i class="far fa-newspaper mr-5 text-warning"></i><i class="fas fa-cut mr-2 text-secondary"></i></h3>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <div class="container">
+      <div class="row">
+          <div class="col-md-4 border p-4 p1Container">
+            
+             <div class="input-group mb-3 p1InputGroup">
+                <input type="text" class="form-control" id="pOneName" placeholder="Player 1">
+                  <div class="input-group-append">
+                    <button class="btn btn-danger player1Join"><i class="fas fa-sign-in-alt mr-2"></i>Join</button>  
+                  </div> 
+             </div>
+              <div class="p1Alert">
+                   
+               </div>
+               <div class="p1buttons">
+                    <button type="button" class="btn btn-danger btn-lg btn-block p1button"><i class="far fa-hand-rock mr-2"></i>ROCK</button>
+                    <button type="button" class="btn btn-warning btn-lg btn-block p1button"><i class="far fa-newspaper mr-2"></i>PAPER</button>
+                    <button type="button" class="btn btn-secondary btn-lg btn-block p1button"><i class="fas fa-cut mr-2"></i>SCISSORS</button>   
+               </div>
+               <div class="p1Score">
+                   
+               </div>
+          </div>
+          <div class="col-md-4 border">
+              
+          </div>
+          <div class="col-md-4 border p-4 p2Container">
+            
+             <div class="input-group mb-3 p2InputGroup">
+                  <input type="text" class="form-control" id="pTwoName" placeholder="Player 2">
+                  <div class="input-group-append">
+                    <button class="btn btn-danger player2Join"><i class="fas fa-sign-in-alt mr-2"></i>Join</button>
+                  </div> 
+             </div>
+              <div class="p2Alert">
+                   
+               </div>
+               <div class="p2buttons">
+                    <button type="button" class="btn btn-danger btn-lg btn-block p2button"><i class="far fa-hand-rock mr-2"></i>ROCK</button>
+                    <button type="button" class="btn btn-warning btn-lg btn-block p2button"><i class="far fa-newspaper mr-2"></i>PAPER</button>
+                    <button type="button" class="btn btn-secondary btn-lg btn-block p2button"><i class="fas fa-cut mr-2"></i>SCISSORS</button>    
+               </div>
+                <div class="p2Score">
+                    
+                </div>
+          </div>
+      </div>
+  </div>
+  <div class="container mt-5">
+      <div class="row">
+          <div class="col-md-8 mx-auto">
+              <div class="card">
+                  <textarea name="" id="shitTalkBox" cols="30" rows="5"></textarea>  
+              </div>
+              <div class="input-group mb-3 shitTalkInput">
+                <input type="text" class="form-control" id="shitTalkInput" placeholder="Talk Trash Here">
+                  <div class="input-group-append">
+                    <button class="btn btn-success sendShitTalk"><i class="fas fa-paper-plane mr-2"></i>Send</button>  
+                  </div> 
+             </div>
+          </div>
+      </div>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
+  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
